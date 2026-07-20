@@ -4,6 +4,15 @@ import { TypingText } from '../components/motion/TypingText';
 import { Section } from '../components/common/Section';
 import { useI18n } from '../features/i18n/i18nContext';
 
+const assetBase = import.meta.env.BASE_URL;
+
+function resolveAssetUrl(src: string) {
+  if (/^(https?:|data:)/i.test(src)) {
+    return src;
+  }
+  return `${assetBase}${src.replace(/^\/+/, '')}`;
+}
+
 function CaseImage({ src, title }: { src: string; title: string }) {
   const [failed, setFailed] = useState(false);
 
@@ -48,7 +57,7 @@ export function CapabilitiesPage() {
         <div className="case-grid case-grid-five">
           {content.cases.items.map((item) => (
             <article className="case-card" key={item.id}>
-              <CaseImage src={item.image} title={item.title} />
+              <CaseImage src={resolveAssetUrl(item.image)} title={item.title} />
               <div>
                 <span>{item.label}</span>
                 <h3>{item.title}</h3>

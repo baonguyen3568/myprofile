@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Outlet, Link, NavLink, useLocation } from 'react-router-dom';
-import { BookOpen, BriefcaseBusiness, Home, Mail, Moon, Sun } from 'lucide-react';
+import { House, Layers3, Moon, Send, Sun, Sparkles } from 'lucide-react';
 import { useI18n } from '../../features/i18n/i18nContext';
 import { useTheme } from '../../features/theme/themeContext';
 
@@ -254,10 +254,10 @@ export function SiteLayout() {
           <img src={`${assetBase}assets/icons/brand-mark.svg`} alt="" />
         </Link>
         <nav className="main-nav" aria-label="Primary navigation">
-          <NavLink to="/" end aria-label={content.nav.home} title={content.nav.home}><Home size={19} /></NavLink>
-          <NavLink to="/capabilities" aria-label={content.nav.capabilities} title={content.nav.capabilities}><BookOpen size={19} /></NavLink>
-          <NavLink to="/projects" aria-label={content.nav.projects} title={content.nav.projects}><BriefcaseBusiness size={19} /></NavLink>
-          <NavLink to="/contact" aria-label={content.nav.contact} title={content.nav.contact}><Mail size={19} /></NavLink>
+          <NavLink to="/" end aria-label={content.nav.home} title={content.nav.home}><House size={18} strokeWidth={1.75} /><span className="nav-tooltip">{content.nav.home}</span></NavLink>
+          <NavLink to="/capabilities" aria-label={content.nav.capabilities} title={content.nav.capabilities}><Sparkles size={18} strokeWidth={1.75} /><span className="nav-tooltip">{content.nav.capabilities}</span></NavLink>
+          <NavLink to="/projects" aria-label={content.nav.projects} title={content.nav.projects}><Layers3 size={18} strokeWidth={1.75} /><span className="nav-tooltip">{content.nav.projects}</span></NavLink>
+          <NavLink to="/contact" aria-label={content.nav.contact} title={content.nav.contact}><Send size={18} strokeWidth={1.75} /><span className="nav-tooltip">{content.nav.contact}</span></NavLink>
         </nav>
       </header>
       <div className="header-actions">
@@ -272,9 +272,9 @@ export function SiteLayout() {
         <motion.div
           key={`${location.pathname}${location.hash}-${locale}-${theme}`}
           className="route-frame"
-          initial={{ opacity: 0, scale: 0.985, filter: 'blur(10px)', clipPath: 'inset(0 0 10% 0 round 18px)' }}
-          animate={{ opacity: 1, scale: 1, filter: 'blur(0px)', clipPath: 'inset(0 0 0% 0 round 0px)' }}
-          exit={{ opacity: 0, scale: 1.012, filter: 'blur(8px)', clipPath: 'inset(8% 0 0 0 round 18px)' }}
+          initial={{ opacity: 0, scale: 0.99, clipPath: 'inset(0 0 3% 0 round 18px)' }}
+          animate={{ opacity: 1, scale: 1, clipPath: 'inset(0 0 0% 0 round 0px)' }}
+          exit={{ opacity: 0, scale: 1.01, clipPath: 'inset(3% 0 0 0 round 18px)' }}
           transition={{ duration: 0.44, ease: [0.22, 1, 0.36, 1] }}
         >
           <Outlet />

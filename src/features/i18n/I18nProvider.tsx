@@ -1,10 +1,15 @@
 import { useMemo, useState, type ReactNode } from 'react';
 import en from '../../content/profile.en.json';
 import vi from '../../content/profile.vi.json';
+import enCases from '../../content/cases.en.json';
+import viCases from '../../content/cases.vi.json';
 import type { Locale, ProfileContent } from '../../types/portfolio';
 import { I18nContext, type I18nContextValue } from './i18nContext';
 
-const contentByLocale: Record<Locale, ProfileContent> = { en, vi };
+const contentByLocale: Record<Locale, ProfileContent> = {
+  en: { ...en, cases: enCases },
+  vi: { ...vi, cases: viCases }
+};
 
 export function I18nProvider({ children }: { children: ReactNode }) {
   const [locale, setLocale] = useState<Locale>(() => {

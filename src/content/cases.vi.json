@@ -1,0 +1,82 @@
+{
+  "eyebrow": "Công trình kỹ thuật tiêu biểu",
+  "title": "Năm hệ thống đáng đọc",
+  "lead": "Một tuyển chọn ngắn về các hệ thống gắn với dữ liệu thật, điều phối mô hình, ràng buộc runtime và trải nghiệm người dùng.",
+  "items": [
+    {
+      "id": "enterprise-rag",
+      "label": "CASE I",
+      "title": "Nền tảng RAG doanh nghiệp và phân tích hợp đồng",
+      "role": "Nền tảng RAG / Agent workflow",
+      "duration": "2026",
+      "summary": "Nền tảng hỏi đáp tài liệu có căn cứ, tìm kiếm web và xử lý workflow hợp đồng.",
+      "bullets": [
+        "Nhập PDF/DOCX, parse, chia đoạn, tạo embedding, lập chỉ mục vector và lưu object storage.",
+        "Hybrid retrieval, lọc metadata, rerank, gom context theo ngân sách token, citation và kiểm chứng câu trả lời.",
+        "Tool cho agent, streaming, session history, worker bất đồng bộ, monitoring và inference vLLM local."
+      ],
+      "stack": ["Agentic RAG", "FastAPI", "Qdrant", "vLLM"],
+      "image": "/assets/cases/enterprise-rag.webp"
+    },
+    {
+      "id": "face-attendance",
+      "label": "CASE II",
+      "title": "Hệ thống chấm công bằng nhận diện khuôn mặt",
+      "role": "Edge AI / Vận hành realtime",
+      "duration": "2026",
+      "summary": "Nền tảng đi từ camera đến workflow chấm công có audit và quản trị nhân sự.",
+      "bullets": [
+        "Nhận RTSP qua GStreamer/NVDEC, nhận diện InsightFace, embedding ArcFace, tracking và identity voting.",
+        "Cửa sổ chấm công, debounce, nghỉ phép/giải trình, phê duyệt, snapshot, RBAC và audit record.",
+        "FastAPI, Vue 3, PostgreSQL, Qdrant, Redis, RabbitMQ, MinIO, MJPEG/WebRTC và trợ lý SQL/RAG."
+      ],
+      "stack": ["Computer vision", "Jetson", "FastAPI", "InsightFace"],
+      "image": "/assets/cases/face-attendance.png"
+    },
+    {
+      "id": "facespeed",
+      "label": "CASE III",
+      "title": "FaceSpeed Studio",
+      "role": "Multimodal RAG / Voice AI",
+      "duration": "2026",
+      "summary": "Studio voice-RAG local trên PDF với citation rõ ràng, NVIDIA Riva và avatar 3D.",
+      "bullets": [
+        "Docling ingestion, metadata PostgreSQL, retrieval Qdrant, embedding/reranking và review bằng vLLM.",
+        "Câu trả lời tự nhiên tách khỏi citation để hội thoại dễ nghe nhưng vẫn kiểm chứng được nguồn.",
+        "NVIDIA Riva TTS, avatar Three.js/ReadyPlayer, Nginx, service isolation và benchmark evidence."
+      ],
+      "stack": ["Multimodal RAG", "NVIDIA Riva", "Three.js", "Qdrant"],
+      "image": "/assets/cases/facespeed.png"
+    },
+    {
+      "id": "retail-agent",
+      "label": "CASE IV",
+      "title": "NTC Store AI Retail Agent",
+      "role": "ReAct agent / Nền tảng commerce",
+      "duration": "2026",
+      "summary": "Trợ lý bán hàng kết nối sản phẩm, giỏ hàng, chính sách và lịch sử hội thoại qua tool.",
+      "bullets": [
+        "ReAct loop, tool registry, observation theo data contract, context sản phẩm/giỏ hàng và memory theo account.",
+        "RAG trên Qdrant cho chính sách bảo hành/giao hàng, phản hồi streaming có thông tin sản phẩm.",
+        "Next.js/React, NestJS/Fastify, PostgreSQL/Prisma, Redis và quality gate có bước revision."
+      ],
+      "stack": ["ReAct agent", "Next.js", "NestJS", "Qdrant"],
+      "image": "/assets/cases/retail-agent.jpg"
+    },
+    {
+      "id": "story-studio",
+      "label": "CASE V",
+      "title": "Ambrouse AI Story Studio",
+      "role": "Pipeline AI media / GPU runtime",
+      "duration": "2026",
+      "summary": "Quy trình local từ URL chương truyện đến văn bản viết lại, audio TTS và video hoàn chỉnh.",
+      "bullets": [
+        "Thu thập chương, rewrite, làm sạch, chunk, TTS, ghép audio, quản lý project và theo dõi tiến trình.",
+        "Đóng gói Windows portable, tích hợp browser-provider bridge, render GPU native và streaming job dài.",
+        "Workflow và runtime hardening là phần tự xây; Browser Use và VieNeu-TTS được ghi nhận là integration."
+      ],
+      "stack": ["AI media", "FastAPI", "GPU rendering", "Automation"],
+      "image": "/assets/cases/story-studio.png"
+    }
+  ]
+}

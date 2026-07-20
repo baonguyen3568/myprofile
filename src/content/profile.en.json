@@ -13,9 +13,9 @@
     "primaryCta": "Open repository catalogue",
     "secondaryCta": "Read technical profile",
     "stats": [
-      { "value": "02", "label": "GitHub namespaces" },
-      { "value": "29", "label": "public repositories" },
-      { "value": "AI", "label": "RAG · Edge · Automation" }
+      { "value": "47", "label": "total repositories" },
+      { "value": "33", "label": "public repositories" },
+      { "value": "14", "label": "private repositories" }
     ]
   },
   "about": {

@@ -1,9 +1,14 @@
 <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="240" height="240" rx="42" fill="transparent"/>
-  <rect x="18" y="18" width="204" height="204" rx="34" fill="#F4EFE5"/>
-  <rect x="38" y="38" width="164" height="164" rx="20" stroke="#1E3A5F" stroke-width="4"/>
-  <path d="M66 166V74h17l55 62V74h28v92h-17L94 104v62H66Z" fill="#102033"/>
-  <path d="M112 166V74h48c18 0 30 10 30 25 0 10-5 18-15 22 13 4 21 12 21 25 0 13-7 20-17 20h-67Zm27-55h17c6 0 10-4 10-10s-4-10-10-10h-17v20Zm0 38h22c7 0 11-4 11-11 0-6-4-10-12-10h-21v21Z" fill="#1E5A5A" fill-opacity="0.86"/>
-  <path d="M58 194h124" stroke="#B48A3C" stroke-width="4" stroke-linecap="round"/>
-  <path d="M84 48h72" stroke="#B48A3C" stroke-width="4" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="mark" x1="42" y1="34" x2="202" y2="208" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#71E4C2"/>
+      <stop offset="1" stop-color="#9DB7FF"/>
+    </linearGradient>
+  </defs>
+  <circle cx="120" cy="120" r="91" stroke="url(#mark)" stroke-width="2" stroke-dasharray="3 9" opacity=".7"/>
+  <path d="M120 25C172.467 25 215 67.533 215 120" stroke="url(#mark)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M120 215C67.533 215 25 172.467 25 120" stroke="url(#mark)" stroke-width="8" stroke-linecap="round" opacity=".35"/>
+  <path d="M78 166V74h15l54 59V74h18v92h-15l-54-59v59H78Z" fill="url(#mark)"/>
+  <path d="M145 166V74h25c19 0 30 10 30 25 0 9-4 16-12 21 10 5 16 13 16 24 0 14-9 22-25 22h-34Zm18-55h9c7 0 11-4 11-10 0-6-4-9-11-9h-9v19Zm0 38h13c7 0 11-4 11-10 0-7-4-10-12-10h-12v20Z" fill="url(#mark)"/>
+  <circle cx="120" cy="25" r="5" fill="#F4EFE5" stroke="#71E4C2" stroke-width="3"/>
 </svg>

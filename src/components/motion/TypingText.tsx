@@ -10,7 +10,7 @@ interface TypingTextProps {
   onDone?: () => void;
 }
 
-export function TypingText({ text, className, as: Tag = 'h1', speed = 21, start = true, onDone }: TypingTextProps) {
+export function TypingText({ text, className, as: Tag = 'h1', speed = 12, start = true, onDone }: TypingTextProps) {
   const reduceMotion = useReducedMotion();
   const initialCount = reduceMotion ? text.length : 0;
   const [visibleCount, setVisibleCount] = useState(initialCount);
@@ -42,7 +42,7 @@ export function TypingText({ text, className, as: Tag = 'h1', speed = 21, start 
         window.clearInterval(timer);
         if (!completedRef.current) {
           completedRef.current = true;
-          window.setTimeout(() => onDoneRef.current?.(), 90);
+          window.setTimeout(() => onDoneRef.current?.(), 45);
         }
       }
     }, speed);

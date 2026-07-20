@@ -15,7 +15,7 @@ export function HomePage() {
   return (
     <main className="home-page">
       <section className="dossier-cover standalone-cover">
-        <motion.div className="cover-copy" initial={{ opacity: 0, y: 12, filter: 'blur(8px)' }} animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}>
+        <motion.div className="cover-copy" initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }}>
           <p className="section-label">{content.hero.eyebrow}</p>
           <TypingText text={content.hero.name} onDone={() => setTitleReady(true)} />
           <RevealAfterTitle ready={titleReady}>

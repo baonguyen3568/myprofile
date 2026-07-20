@@ -1,0 +1,82 @@
+{
+  "eyebrow": "Selected engineering work",
+  "title": "Five systems worth reading",
+  "lead": "A short selection of systems built around real data, model orchestration, runtime constraints, and user-facing delivery.",
+  "items": [
+    {
+      "id": "enterprise-rag",
+      "label": "CASE I",
+      "title": "Enterprise RAG & Contract Intelligence",
+      "role": "RAG platform / Agent workflows",
+      "duration": "2026",
+      "summary": "A grounded document platform for enterprise Q&A, web search, and contract workflows.",
+      "bullets": [
+        "PDF/DOCX ingestion, parsing, chunking, embeddings, vector indexing, and object storage.",
+        "Hybrid retrieval, metadata filters, reranking, token-budgeted context, citations, and answer verification.",
+        "Agent tools, streamed responses, session history, async workers, monitoring, and local vLLM inference."
+      ],
+      "stack": ["Agentic RAG", "FastAPI", "Qdrant", "vLLM"],
+      "image": "/assets/cases/enterprise-rag.webp"
+    },
+    {
+      "id": "face-attendance",
+      "label": "CASE II",
+      "title": "Face Recognition Attendance System",
+      "role": "Edge AI / Realtime operations",
+      "duration": "2026",
+      "summary": "A camera-to-workforce platform that turns face recognition into auditable attendance workflows.",
+      "bullets": [
+        "RTSP camera ingestion with GStreamer/NVDEC, InsightFace recognition, ArcFace embeddings, tracking, and identity voting.",
+        "Attendance windows, debounce, leave and explanation flows, approvals, snapshots, RBAC, and audit records.",
+        "FastAPI, Vue 3, PostgreSQL, Qdrant, Redis, RabbitMQ, MinIO, MJPEG/WebRTC, and SQL/RAG assistant."
+      ],
+      "stack": ["Computer vision", "Jetson", "FastAPI", "InsightFace"],
+      "image": "/assets/cases/face-attendance.png"
+    },
+    {
+      "id": "facespeed",
+      "label": "CASE III",
+      "title": "FaceSpeed Studio",
+      "role": "Multimodal RAG / Voice AI",
+      "duration": "2026",
+      "summary": "A local PDF voice-RAG studio with citation-aware answers, NVIDIA Riva speech, and a 3D avatar.",
+      "bullets": [
+        "Docling ingestion, PostgreSQL metadata, Qdrant retrieval, embedding/reranking, and vLLM review.",
+        "Natural spoken answers keep citations inspectable instead of mixing source details into the conversation.",
+        "NVIDIA Riva TTS, Three.js/ReadyPlayer avatar playback, Nginx routing, service isolation, and benchmark evidence."
+      ],
+      "stack": ["Multimodal RAG", "NVIDIA Riva", "Three.js", "Qdrant"],
+      "image": "/assets/cases/facespeed.png"
+    },
+    {
+      "id": "retail-agent",
+      "label": "CASE IV",
+      "title": "NTC Store AI Retail Agent",
+      "role": "ReAct agent / Commerce platform",
+      "duration": "2026",
+      "summary": "A retail assistant that connects product, cart, policy, and conversation context through tools.",
+      "bullets": [
+        "ReAct loops, tool registry, contract-validated observations, product/cart context, and account-scoped memory.",
+        "Qdrant policy retrieval for warranty and delivery questions, with streamed product-aware responses.",
+        "Next.js/React, NestJS/Fastify, PostgreSQL/Prisma, Redis, and a quality gate with response revision."
+      ],
+      "stack": ["ReAct agent", "Next.js", "NestJS", "Qdrant"],
+      "image": "/assets/cases/retail-agent.jpg"
+    },
+    {
+      "id": "story-studio",
+      "label": "CASE V",
+      "title": "Ambrouse AI Story Studio",
+      "role": "AI media pipeline / GPU runtime",
+      "duration": "2026",
+      "summary": "A local production workflow from chapter URLs to rewritten text, TTS audio, and rendered video.",
+      "bullets": [
+        "Chapter collection, rewriting, cleanup, chunking, TTS, audio merge, project management, and progress tracking.",
+        "Portable Windows packaging, browser-provider bridge integration, native GPU rendering, and long-job streaming.",
+        "The product workflow and runtime hardening are custom; Browser Use and VieNeu-TTS are treated as integrations."
+      ],
+      "stack": ["AI media", "FastAPI", "GPU rendering", "Automation"],
+      "image": "/assets/cases/story-studio.png"
+    }
+  ]
+}

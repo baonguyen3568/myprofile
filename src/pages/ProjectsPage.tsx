@@ -15,6 +15,9 @@ const bannerExtensions = ['png', 'jpg', 'jpeg', 'webp', 'gif', 'svg'];
 
 function repoBannerCandidates(project: GitHubProject) {
   const base = import.meta.env.BASE_URL;
+  const localOverride = project.bannerImage?.startsWith('/')
+    ? `${base}${project.bannerImage.replace(/^\/+/, '')}`
+    : project.bannerImage;
   const rootCandidates = project.fullName === 'ambrouse/myprofile'
     ? bannerExtensions.map((extension) => `${base}banner.${extension}`)
     : [];
@@ -28,7 +31,7 @@ function repoBannerCandidates(project: GitHubProject) {
     `${base}assets/repo-banners/${project.name}/banner.${extension}`
   ]);
 
-  return Array.from(new Set([...rootCandidates, project.bannerImage, ...remoteCandidates, ...localCandidates].filter(Boolean) as string[]));
+  return Array.from(new Set([...rootCandidates, localOverride, ...remoteCandidates, ...localCandidates].filter(Boolean) as string[]));
 }
 
 function downsampleBannerImage(image: HTMLImageElement) {
@@ -65,6 +68,17 @@ function ProjectBanner({ project }: { project: GitHubProject }) {
   return (
     <div className={`repo-banner repo-banner-${banner} ${loadedImage ? 'repo-banner-image' : 'repo-banner-fallback'}`} style={style} aria-hidden="true">
       <div className="banner-gridline" />
+      {!loadedImage && (
+        <div className="repo-banner-fallback-art" aria-hidden="true">
+          <span>{(project.banner ?? 'AI').slice(0, 2).toUpperCase()}</span>
+        </div>
+      )}
+      {!loadedImage && (
+        <div className="repo-banner-fallback-copy">
+          <span>{project.category ?? 'Repository'}</span>
+          <strong>{project.title}</strong>
+        </div>
+      )}
       {loadedImage && <img className="repo-banner-backdrop" src={loadedImage} alt="" />}
       {loadedImage && <img className="repo-banner-fit" src={loadedImage} alt="" />}
       {candidate && candidate !== loadedImage && (

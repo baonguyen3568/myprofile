@@ -13,9 +13,9 @@
     "primaryCta": "Mở danh mục repository",
     "secondaryCta": "Đọc hồ sơ kỹ thuật",
     "stats": [
-      { "value": "02", "label": "GitHub namespace" },
-      { "value": "29", "label": "repository public" },
-      { "value": "AI", "label": "RAG · Edge · Automation" }
+      { "value": "47", "label": "tổng repository" },
+      { "value": "33", "label": "repository public" },
+      { "value": "14", "label": "repository private" }
     ]
   },
   "about": {
