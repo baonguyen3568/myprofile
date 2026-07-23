@@ -108,8 +108,8 @@ function ProjectCard({ project, featured = false, index = 0 }: { project: GitHub
   return (
     <motion.article
       className={featured ? 'project-card featured' : 'project-card'}
-      initial={{ opacity: 0, y: 18, scale: 0.97, filter: 'blur(8px)' }}
-      whileInView={{ opacity: 1, y: 0, scale: 1, filter: 'blur(0px)' }}
+      initial={{ opacity: 0, y: 12, scale: 0.99 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
       viewport={{ once: false, amount: 0.18 }}
       transition={{ duration: 0.35, delay: Math.min(index, 8) * 0.033, ease: [0.22, 1, 0.36, 1] }}
     >

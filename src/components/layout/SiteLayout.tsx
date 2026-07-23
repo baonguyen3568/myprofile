@@ -1,7 +1,7 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Outlet, Link, NavLink, useLocation } from 'react-router-dom';
-import { House, Layers3, Moon, Send, Sun, Sparkles } from 'lucide-react';
+import { House, Languages, Layers3, Menu, Moon, Send, Sun, Sparkles, X } from 'lucide-react';
 import { useI18n } from '../../features/i18n/i18nContext';
 import { useTheme } from '../../features/theme/themeContext';
 
@@ -34,13 +34,13 @@ interface GridAgent {
 }
 
 const agentPalette = {
-  light: ['#00a884', '#2f7d5f', '#c58a2d', '#426b4d', '#0ea5a3', '#7a9f46'],
-  dark: ['#64ffbf', '#7df7d4', '#a6ff7a', '#d1ad66', '#7ee7ff', '#b7ffcf']
+  light: ['#2f8b5b', '#5aa86a', '#a66a3f', '#3c7652', '#78b86b', '#8b9b4a'],
+  dark: ['#73c77d', '#9bd88b', '#c68a50', '#4fa875', '#b7e18e', '#d1a15f']
 };
 
 const gridPalette = {
-  light: ['rgba(31, 138, 95, 0.16)', 'rgba(157, 107, 31, 0.1)', 'rgba(17, 24, 39, 0.07)', 'rgba(14, 165, 163, 0.1)'],
-  dark: ['rgba(100, 255, 191, 0.13)', 'rgba(209, 173, 102, 0.09)', 'rgba(126, 231, 255, 0.08)', 'rgba(238, 243, 238, 0.06)']
+  light: ['rgba(47, 139, 91, 0.14)', 'rgba(166, 106, 63, 0.09)', 'rgba(36, 83, 61, 0.07)', 'rgba(90, 168, 106, 0.1)'],
+  dark: ['rgba(115, 199, 125, 0.13)', 'rgba(198, 138, 80, 0.09)', 'rgba(79, 168, 117, 0.08)', 'rgba(218, 239, 196, 0.06)']
 };
 
 const pointsPerAgent = 9;
@@ -244,28 +244,54 @@ export function SiteLayout() {
   const { content, locale, toggleLocale } = useI18n();
   const { theme, toggleTheme } = useTheme();
   const location = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    const frame = window.requestAnimationFrame(() => setMounted(true));
+    return () => window.cancelAnimationFrame(frame);
+  }, []);
 
   return (
-    <div className="app-shell">
+    <div className={`app-shell${mounted ? ' is-mounted' : ''}`}>
       <AmbientGridCanvas />
       <AnchorScroll />
-      <header className="site-header">
+      <header className={`site-header${menuOpen ? ' menu-open' : ''}`}>
         <Link to="/" className="brand" aria-label="Nguyễn Lê Quốc Bảo home">
           <img src={`${assetBase}assets/icons/brand-mark.svg`} alt="" />
         </Link>
-        <nav className="main-nav" aria-label="Primary navigation">
+        <div className="header-menu">
+          <nav className="main-nav" aria-label="Primary navigation" onClick={() => setMenuOpen(false)}>
           <NavLink to="/" end aria-label={content.nav.home} title={content.nav.home}><House size={18} strokeWidth={1.75} /><span className="nav-tooltip">{content.nav.home}</span></NavLink>
           <NavLink to="/capabilities" aria-label={content.nav.capabilities} title={content.nav.capabilities}><Sparkles size={18} strokeWidth={1.75} /><span className="nav-tooltip">{content.nav.capabilities}</span></NavLink>
           <NavLink to="/projects" aria-label={content.nav.projects} title={content.nav.projects}><Layers3 size={18} strokeWidth={1.75} /><span className="nav-tooltip">{content.nav.projects}</span></NavLink>
-          <NavLink to="/contact" aria-label={content.nav.contact} title={content.nav.contact}><Send size={18} strokeWidth={1.75} /><span className="nav-tooltip">{content.nav.contact}</span></NavLink>
-        </nav>
+            <NavLink to="/contact" aria-label={content.nav.contact} title={content.nav.contact}><Send size={18} strokeWidth={1.75} /><span className="nav-tooltip">{content.nav.contact}</span></NavLink>
+          </nav>
+          <div className="mobile-actions">
+            <button type="button" onClick={toggleTheme} aria-label="Toggle color theme">
+              {theme === 'dark' ? <Sun size={16} strokeWidth={1.8} /> : <Moon size={16} strokeWidth={1.8} />}
+            </button>
+            <button type="button" onClick={toggleLocale} aria-label="Toggle language" title={locale === 'vi' ? 'Switch to English' : 'Chuyển sang tiếng Việt'}>
+              <Languages size={16} strokeWidth={1.8} />
+            </button>
+          </div>
+      </div>
+      <button
+        className="mobile-menu-toggle"
+        type="button"
+        onClick={() => setMenuOpen((open) => !open)}
+        aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+        aria-expanded={menuOpen}
+      >
+        {menuOpen ? <X size={18} strokeWidth={1.8} /> : <Menu size={18} strokeWidth={1.8} />}
+      </button>
       </header>
       <div className="header-actions">
         <button type="button" onClick={toggleTheme} aria-label="Toggle color theme">
-          {theme === 'dark' ? <Sun size={17} /> : <Moon size={17} />}
+          {theme === 'dark' ? <Sun size={16} strokeWidth={1.8} /> : <Moon size={16} strokeWidth={1.8} />}
         </button>
-        <button type="button" onClick={toggleLocale} aria-label="Toggle language">
-          {locale === 'vi' ? 'EN' : 'VI'}
+        <button type="button" onClick={toggleLocale} aria-label="Toggle language" title={locale === 'vi' ? 'Switch to English' : 'Chuyển sang tiếng Việt'}>
+          <Languages size={16} strokeWidth={1.8} />
         </button>
       </div>
       <AnimatePresence mode="wait">

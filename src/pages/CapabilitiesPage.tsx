@@ -53,7 +53,7 @@ export function CapabilitiesPage() {
         </div>
       </Section>
 
-      <Section eyebrow={content.cases.eyebrow} title={content.cases.title}>
+      <Section className="cases-section" eyebrow={content.cases.eyebrow} title={content.cases.title}>
         <div className="case-grid case-grid-five">
           {content.cases.items.map((item) => (
             <article className="case-card" key={item.id}>

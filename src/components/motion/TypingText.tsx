@@ -10,11 +10,14 @@ interface TypingTextProps {
   onDone?: () => void;
 }
 
-export function TypingText({ text, className, as: Tag = 'h1', speed = 12, start = true, onDone }: TypingTextProps) {
+const TYPING_DURATION_MS = 720;
+
+export function TypingText({ text, className, as: Tag = 'h1', speed, start = true, onDone }: TypingTextProps) {
   const reduceMotion = useReducedMotion();
   const initialCount = reduceMotion ? text.length : 0;
-  const [visibleCount, setVisibleCount] = useState(initialCount);
+  const [typingState, setTypingState] = useState({ text, count: initialCount });
   const characters = useMemo(() => Array.from(text), [text]);
+  const typingDelay = speed ?? Math.max(8, Math.round(TYPING_DURATION_MS / Math.max(characters.length, 1)));
   const onDoneRef = useRef(onDone);
   const completedRef = useRef(false);
 
@@ -37,7 +40,7 @@ export function TypingText({ text, className, as: Tag = 'h1', speed = 12, start 
     let index = 0;
     const timer = window.setInterval(() => {
       index += 1;
-      setVisibleCount(index);
+      setTypingState({ text, count: index });
       if (index >= characters.length) {
         window.clearInterval(timer);
         if (!completedRef.current) {
@@ -45,18 +48,21 @@ export function TypingText({ text, className, as: Tag = 'h1', speed = 12, start 
           window.setTimeout(() => onDoneRef.current?.(), 45);
         }
       }
-    }, speed);
+    }, typingDelay);
 
     return () => window.clearInterval(timer);
-  }, [characters.length, reduceMotion, speed, start, text]);
+  }, [characters.length, reduceMotion, start, text, typingDelay]);
 
-  const count = reduceMotion ? characters.length : visibleCount;
+  const count = reduceMotion ? characters.length : typingState.text === text ? typingState.count : 0;
   const done = count >= characters.length;
 
   return (
-    <Tag className={className} aria-label={text}>
-      <span aria-hidden="true">{characters.slice(0, count).join('')}</span>
-      {!reduceMotion && <span className={done ? 'typing-cursor done' : 'typing-cursor'} aria-hidden="true" />}
+    <Tag className={`${className ?? ''} typing-text`.trim()} aria-label={text}>
+      <span className="typing-text-placeholder" aria-hidden="true">{text}</span>
+      <span className="typing-text-live" aria-hidden="true">
+        {characters.slice(0, count).join('')}
+        {!reduceMotion && <span className={done ? 'typing-cursor done' : 'typing-cursor'} />}
+      </span>
     </Tag>
   );
 }

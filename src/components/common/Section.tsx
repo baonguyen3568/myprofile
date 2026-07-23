@@ -7,13 +7,14 @@ interface SectionProps {
   title: string;
   lead?: string;
   children: ReactNode;
+  className?: string;
 }
 
-export function Section({ id, eyebrow, title, lead, children }: SectionProps) {
+export function Section({ id, eyebrow, title, lead, children, className }: SectionProps) {
   return (
     <motion.section
       id={id}
-      className="section"
+      className={`section ${className ?? ''}`.trim()}
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: false, amount: 0.16 }}

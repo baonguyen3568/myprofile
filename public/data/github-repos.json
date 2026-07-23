@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T06:17:32.153Z",
+  "generatedAt": "2026-07-23T10:16:15.094Z",
   "owners": [
     "ambrouse",
     "baolnq-ai"
@@ -56,8 +56,7 @@
         "frontend",
         "Python"
       ],
-      "banner": "web",
-      "bannerImage": "https://raw.githubusercontent.com/baolnq-ai/sts-translate-realtime-web/main/tests/release-demo-evidence-2026-05-23/video/sts-room-demo.gif"
+      "banner": "web"
     },
     {
       "id": "1237224799",
@@ -84,7 +83,7 @@
         "Python"
       ],
       "banner": "operations",
-      "bannerImage": "/myprofile/assets/cases/story-studio.png"
+      "bannerImage": "/assets/cases/story-studio.png"
     },
     {
       "id": "1138792982",
@@ -136,8 +135,56 @@
         "workflow",
         "Jupyter Notebook"
       ],
-      "banner": "operations",
-      "bannerImage": "https://raw.githubusercontent.com/ambrouse/CF_based_encode_tranformer_de_xuat_san_pham/main/assets_readme/ChatGPT%20Image%20May%2011,%202025,%2012_59_35%20AM.png"
+      "banner": "operations"
+    },
+    {
+      "id": "1308269096",
+      "owner": "ambrouse",
+      "name": "chill-web",
+      "fullName": "ambrouse/chill-web",
+      "title": "Chill Web",
+      "description": "Chill Web is a web interface repository, useful for reading UI structure, client routing and deployment practice.",
+      "url": "https://github.com/ambrouse/chill-web",
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "isFork": false,
+      "isArchived": false,
+      "isFeatured": false,
+      "updatedAt": "2026-07-22T01:41:24Z",
+      "pushedAt": "2026-07-22T01:41:20Z",
+      "category": "Computer vision study",
+      "keywords": [
+        "vision",
+        "inference",
+        "model"
+      ],
+      "banner": "vision"
+    },
+    {
+      "id": "1307382542",
+      "owner": "baolnq-ai",
+      "name": "upload-pipeline",
+      "fullName": "baolnq-ai/upload-pipeline",
+      "title": "Upload Pipeline",
+      "description": "Upload Pipeline is a Python repository kept for implementation reference, code structure and deployment history.",
+      "url": "https://github.com/baolnq-ai/upload-pipeline",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "isFork": false,
+      "isArchived": false,
+      "isFeatured": false,
+      "updatedAt": "2026-07-21T07:04:58Z",
+      "pushedAt": "2026-07-21T07:03:50Z",
+      "category": "Repository record",
+      "keywords": [
+        "Python",
+        "public repo",
+        "baolnq-ai"
+      ],
+      "banner": "record"
     },
     {
       "id": "1230669993",
@@ -155,15 +202,40 @@
       "isArchived": false,
       "isFeatured": false,
       "updatedAt": "2026-05-27T09:04:42Z",
-      "pushedAt": "2026-07-13T09:22:52Z",
+      "pushedAt": "2026-07-20T09:19:26Z",
       "category": "Applied AI system",
       "keywords": [
         "AI",
         "agent workflow",
         "Python"
       ],
-      "banner": "ai",
-      "bannerImage": "https://raw.githubusercontent.com/baolnq-ai/Multi-Agent-Intelligent-WarehousePublic-nvidia/main/media-repo/banner.png"
+      "banner": "ai"
+    },
+    {
+      "id": "1038471832",
+      "owner": "ambrouse",
+      "name": "myprofile",
+      "fullName": "ambrouse/myprofile",
+      "title": "Myprofile",
+      "description": "Myprofile is a CSS web interface repository, useful for reading UI structure, client routing and deployment practice.",
+      "url": "https://github.com/ambrouse/myprofile",
+      "language": "CSS",
+      "topics": [],
+      "stars": 1,
+      "forks": 0,
+      "isFork": false,
+      "isArchived": false,
+      "isFeatured": false,
+      "updatedAt": "2026-07-20T09:14:43Z",
+      "pushedAt": "2026-07-20T09:14:28Z",
+      "category": "Computer vision study",
+      "keywords": [
+        "vision",
+        "inference",
+        "CSS"
+      ],
+      "banner": "vision",
+      "bannerImage": "https://raw.githubusercontent.com/ambrouse/myprofile/main/banner.jpg"
     },
     {
       "id": "1287828444",
@@ -359,8 +431,7 @@
         "agent workflow",
         "TypeScript"
       ],
-      "banner": "ai",
-      "bannerImage": "https://raw.githubusercontent.com/baolnq-ai/Agentic-Commerce-blueprint-provider-/main/docs/images/hero.png"
+      "banner": "ai"
     },
     {
       "id": "1242990126",
@@ -387,32 +458,6 @@
       "banner": "record"
     },
     {
-      "id": "1038471832",
-      "owner": "ambrouse",
-      "name": "myprofile",
-      "fullName": "ambrouse/myprofile",
-      "title": "Myprofile",
-      "description": "Myprofile is a CSS web interface repository, useful for reading UI structure, client routing and deployment practice.",
-      "url": "https://github.com/ambrouse/myprofile",
-      "language": "CSS",
-      "topics": [],
-      "stars": 1,
-      "forks": 0,
-      "isFork": false,
-      "isArchived": false,
-      "isFeatured": false,
-      "updatedAt": "2026-07-20T06:06:40Z",
-      "pushedAt": "2026-05-17T13:46:15Z",
-      "category": "Computer vision study",
-      "keywords": [
-        "vision",
-        "inference",
-        "CSS"
-      ],
-      "banner": "vision",
-      "bannerImage": "https://raw.githubusercontent.com/ambrouse/myprofile/main/banner.jpg"
-    },
-    {
       "id": "1110522414",
       "owner": "ambrouse",
       "name": "note-online-frontend",
@@ -435,8 +480,7 @@
         "inference",
         "JavaScript"
       ],
-      "banner": "vision",
-      "bannerImage": "https://raw.githubusercontent.com/ambrouse/note-online-frontend/main/public/background.gif"
+      "banner": "vision"
     },
     {
       "id": "1232667200",
@@ -461,8 +505,7 @@
         "utility",
         "Python"
       ],
-      "banner": "automation",
-      "bannerImage": "https://raw.githubusercontent.com/baolnq-ai/toll-brouser-gpt-gemini/main/static/browser-use.png"
+      "banner": "automation"
     },
     {
       "id": "1178500301",
@@ -486,8 +529,7 @@
         "public repo",
         "baolnq-ai"
       ],
-      "banner": "record",
-      "bannerImage": "https://raw.githubusercontent.com/baolnq-ai/images/main/snowflake.png"
+      "banner": "record"
     },
     {
       "id": "1218727494",
@@ -511,8 +553,7 @@
         "public repo",
         "ambrouse"
       ],
-      "banner": "record",
-      "bannerImage": "https://raw.githubusercontent.com/ambrouse/img/main/ChatGPT%20Image%20Apr%2023%2C%202026%2C%2001_52_34%20PM.png"
+      "banner": "record"
     },
     {
       "id": "1108994960",
@@ -690,8 +731,7 @@
         "frontend",
         "Jupyter Notebook"
       ],
-      "banner": "web",
-      "bannerImage": "https://raw.githubusercontent.com/ambrouse/CF_based_encode_tranformer_de_xuat_phim/main/readme_assets/mau.png"
+      "banner": "web"
     },
     {
       "id": "951446802",
@@ -716,8 +756,7 @@
         "inference",
         "Jupyter Notebook"
       ],
-      "banner": "vision",
-      "bannerImage": "https://raw.githubusercontent.com/ambrouse/te_nga_dot_quy_yolov8_v2/main/assets_readme/titlewebp.png"
+      "banner": "vision"
     },
     {
       "id": "957598808",
@@ -742,8 +781,7 @@
         "frontend",
         "Jupyter Notebook"
       ],
-      "banner": "web",
-      "bannerImage": "https://raw.githubusercontent.com/ambrouse/du_doan_cam_xuc_based_tranformer/main/ketqua/mau.png"
+      "banner": "web"
     },
     {
       "id": "949055013",
@@ -792,8 +830,7 @@
         "inference",
         "Python"
       ],
-      "banner": "vision",
-      "bannerImage": "https://raw.githubusercontent.com/ambrouse/nhan_dien_te_nga_yolo_v8/main/assets_readme/mau.png"
+      "banner": "vision"
     },
     {
       "id": "910512812",
@@ -818,8 +855,7 @@
         "inference",
         "Python"
       ],
-      "banner": "vision",
-      "bannerImage": "https://raw.githubusercontent.com/ambrouse/NhanDienThuNgu_objectDetection/main/assets_readme/mau.png"
+      "banner": "vision"
     },
     {
       "id": "899524387",
@@ -870,8 +906,7 @@
         "workflow",
         "Dart"
       ],
-      "banner": "operations",
-      "bannerImage": "https://raw.githubusercontent.com/ambrouse/phanmenquanlysan/main/style/snowflake-14-xxl.png"
+      "banner": "operations"
     }
   ]
 }
