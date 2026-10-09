@@ -6,12 +6,11 @@ Updated: 2026-05-17
 
 The portfolio project page is generated from public repositories owned by:
 
-- `ambrouse`
-- `baolnq-ai`
+- `baonguyen3568` (GitHub organization; private repositories are excluded)
 
 ## Flow
 
-1. `npm run sync:github` calls the GitHub REST API for each owner.
+1. `npm run sync:github` calls the GitHub REST API for the organization.
 2. The script normalizes repository metadata.
 3. The script enriches presentation metadata: `category`, `keywords` and deterministic local `banner` style.
 4. Curated corrections from `src/content/projects.overrides.json` improve weak public repo titles, descriptions and summaries.

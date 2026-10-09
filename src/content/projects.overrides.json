@@ -1,46 +1,46 @@
 {
   "featured": [],
   "overrides": {
-    "ambrouse/NVIDIARiva-Audio2Face-facespeed": {
+    "baonguyen3568/NVIDIARiva-Audio2Face-facespeed": {
       "title": "FaceSpeed Studio",
       "description": "A local PDF voice-RAG studio with NVIDIA Riva speech and browser-based 3D avatar playback.",
       "summary": "Citation-aware answers, Qdrant retrieval, vLLM review, Riva TTS, Three.js avatar delivery, and runtime hardening.",
       "featured": true,
       "bannerImage": "/assets/cases/facespeed.png"
     },
-    "baolnq-ai/agent-retail": {
+    "baonguyen3568/agent-retail": {
       "title": "NTC Store AI Retail Agent",
       "description": "A full-stack ReAct retail agent that connects product, cart, policy, and conversation context through tools.",
       "summary": "Tool contracts, account-scoped memory, Qdrant policy retrieval, streamed responses, and response quality gates.",
       "featured": true,
       "bannerImage": "/assets/cases/retail-agent.jpg"
     },
-    "ambrouse/ambrouse-spam_audio_video_v2": {
+    "baonguyen3568/ambrouse-spam_audio_video_v2": {
       "title": "Ambrouse AI Story Studio",
       "description": "A local production pipeline from chapter URLs to rewritten text, TTS audio, and GPU-rendered video.",
       "summary": "AI media orchestration, portable packaging, browser-provider integration, native rendering, and release hardening.",
       "featured": true,
       "bannerImage": "/assets/cases/story-studio.png"
     },
-    "baolnq-ai/sts-translate-realtime-web": {
+    "baonguyen3568/sts-translate-realtime-web": {
       "title": "STS Translate Realtime Web",
       "description": "A two-person EN/VI speech translation room with WebSocket routing and local ASR-to-TTS processing.",
       "summary": "Push-to-talk capture, peer-only playback, voice profiles, VAD, benchmarks, and end-to-end audio evidence.",
       "featured": true
     },
-    "ambrouse/CF_based_encode_tranformer_de_xuat_san_pham": {
+    "baonguyen3568/CF_based_encode_tranformer_de_xuat_san_pham": {
       "title": "Transformer Product Recommendation",
       "description": "A product recommendation system combining collaborative filtering, user/product features, and Transformer encoding.",
       "summary": "Applied ML work spanning data preparation, model training, evaluation, and a full-stack demonstration.",
       "featured": true
     },
-    "ambrouse/frontend-test": {
+    "baonguyen3568/frontend-test": {
       "title": "AI Hub Provider Control Plane",
       "description": "A local AI operations dashboard for installing, running, monitoring, and cleaning up model providers.",
       "summary": "Next.js, FastAPI, Nginx, provider lifecycle scripts, health/log/metric views, CI, and security gates.",
       "featured": true
     },
-    "ambrouse/mulltiagent-chatbot-local": {
+    "baonguyen3568/mulltiagent-chatbot-local": {
       "title": "Local Multi-Agent RAG System",
       "description": "A local document-generation and retrieval system built around Qwen, Marker PDF parsing, embeddings, and reranking.",
       "summary": "Dockerized GPU services with FastAPI embedding/rerank endpoints and a focused local inference workflow.",

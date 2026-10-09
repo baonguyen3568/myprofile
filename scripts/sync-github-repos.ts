@@ -15,6 +15,7 @@ interface GitHubRepoResponse {
   stargazers_count: number;
   forks_count: number;
   fork: boolean;
+  private?: boolean;
   archived: boolean;
   updated_at: string;
   pushed_at: string;
@@ -44,7 +45,7 @@ interface PresentationMetadata {
   banner: string;
 }
 
-const owners = ['ambrouse', 'baolnq-ai'];
+const owners = ['baonguyen3568'];
 const outputPath = resolve('public/data/github-repos.json');
 const overridesPath = resolve('src/content/projects.overrides.json');
 
@@ -291,7 +292,7 @@ async function readOverrides(): Promise<ProjectOverrideFile> {
 
 async function main() {
   const overrides = await readOverrides();
-  const repos = (await Promise.all(owners.map(fetchRepos))).flat().filter((repo) => !repo.archived);
+  const repos = (await Promise.all(owners.map(fetchRepos))).flat().filter((repo) => !repo.archived && !repo.private);
   const bannerEntries = await Promise.all(repos.map(async (repo) => [repo.full_name, await fetchReadmeBanner(repo)] as const));
   const bannerByRepo = Object.fromEntries(bannerEntries.filter(([, banner]) => Boolean(banner)));
   const projects = repos

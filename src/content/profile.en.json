@@ -13,8 +13,8 @@
     "primaryCta": "Open repository catalogue",
     "secondaryCta": "Read technical profile",
     "stats": [
-      { "value": "47", "label": "total repositories" },
-      { "value": "33", "label": "public repositories" },
+      { "value": "52", "label": "total repositories" },
+      { "value": "38", "label": "public repositories" },
       { "value": "14", "label": "private repositories" }
     ]
   },
@@ -23,7 +23,7 @@
     "title": "Preface",
     "body": "The portfolio is concerned with systems thinking: how an AI idea becomes service boundaries, data flows, repository structure, validation, and a deployment path. It is arranged as a technical notebook so that the reader can follow the work without decorative distraction.",
     "highlights": [
-      "Public repositories are indexed from ambrouse and baolnq-ai.",
+      "Public repositories are indexed from the baonguyen3568 GitHub organization.",
       "Case studies emphasize responsibility, implementation method, and operational structure.",
       "The writing is intentionally restrained: clear, verifiable, and tied to observable engineering work."
     ]
@@ -70,7 +70,7 @@
           "Useful as a study in agent-ready business workflow modelling and integration discipline."
         ],
         "stack": ["TypeScript", "Agentic commerce", "Provider API", "Workflow modelling"],
-        "image": "https://raw.githubusercontent.com/baolnq-ai/Agentic-Commerce-blueprint-provider-/main/docs/images/hero.png"
+        "image": "https://raw.githubusercontent.com/baonguyen3568/Agentic-Commerce-blueprint-provider-/main/docs/images/hero.png"
       },
       {
         "id": "warehouse-multi-agent",
@@ -85,7 +85,7 @@
           "Reads as a systems blueprint because it links workflow structure, domain entities, and execution constraints."
         ],
         "stack": ["Python", "Multi-agent", "Warehouse automation", "NVIDIA workflow"],
-        "image": "https://raw.githubusercontent.com/baolnq-ai/Multi-Agent-Intelligent-WarehousePublic-nvidia/main/media-repo/banner.png"
+        "image": "https://raw.githubusercontent.com/baonguyen3568/Multi-Agent-Intelligent-WarehousePublic-nvidia/main/media-repo/banner.png"
       },
       {
         "id": "browser-agent-tooling",
@@ -100,7 +100,7 @@
           "Suitable for studying agent control loops, automation safety boundaries, and practical task execution."
         ],
         "stack": ["Python", "Browser automation", "Agent workflow", "Gemini/GPT"],
-        "image": "https://raw.githubusercontent.com/baolnq-ai/toll-brouser-gpt-gemini/main/static/browser-use.png"
+        "image": "https://raw.githubusercontent.com/baonguyen3568/toll-brouser-gpt-gemini/main/static/browser-use.png"
       },
       {
         "id": "online-note-system",
@@ -115,7 +115,7 @@
           "Shows the transition from feature implementation toward maintainable service boundaries."
         ],
         "stack": ["Frontend", "Backend", "API", "Persistence"],
-        "image": "https://raw.githubusercontent.com/ambrouse/note-online-frontend/main/public/background.gif"
+        "image": "https://raw.githubusercontent.com/baonguyen3568/note-online-frontend/main/public/background.gif"
       },
       {
         "id": "fall-detection-yolo",
@@ -130,7 +130,7 @@
           "Useful as a record of edge-oriented perception, dataset interpretation, and application-facing AI behaviour."
         ],
         "stack": ["YOLOv8", "Computer vision", "Detection", "Applied inference"],
-        "image": "https://raw.githubusercontent.com/ambrouse/te_nga_dot_quy_yolov8_v2/main/assets_readme/titlewebp.png"
+        "image": "https://raw.githubusercontent.com/baonguyen3568/te_nga_dot_quy_yolov8_v2/main/assets_readme/titlewebp.png"
       }
     ]
   },
@@ -160,8 +160,8 @@
   "contact": {
     "title": "Work contact",
     "lead": "For AI prototypes, backend/API work, deployment fixes, or repository review, send the goal, repository link, and current state. That keeps the conversation practical and easy to act on.",
-    "email": "ngbao3568@gmail.com",
+    "email": "ngbao3558@gmail.com",
     "phone": "0326032296",
-    "github": "github.com/ambrouse"
+    "github": "github.com/baonguyen3568"
   }
 }

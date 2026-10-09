@@ -35,9 +35,13 @@ export function useProjects() {
     };
   }, []);
 
+  const owners = useMemo(() => {
+    return Array.from(new Set(state.projects.map((project) => project.owner))).sort();
+  }, [state.projects]);
+
   const languages = useMemo(() => {
     return Array.from(new Set(state.projects.map((project) => project.language).filter(Boolean))).sort() as string[];
   }, [state.projects]);
 
-  return { ...state, languages };
+  return { ...state, owners, languages };
 }

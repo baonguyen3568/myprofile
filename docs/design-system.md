@@ -8,7 +8,7 @@ The portfolio now follows an academic dossier direction: restrained, professiona
 
 ## Visual system
 
-- Light mode uses paper/off-white surfaces, deep ink text, muted academic blue-green accents and thin rules.
+- Light mode uses paper/off-white surfaces, deep ink text, monochrome black/gray/white accents and thin rules.
 - Dark mode uses deep navy/charcoal, warm text and subdued accents; it avoids neon glow and playful gradients.
 - The background uses a subtle checker/grid layer with faint animated color traces that move along the grid without dominating the page.
 - Borders, metadata rows and compact cards carry the visual hierarchy more than large images.

@@ -39,7 +39,7 @@ export function HomePage() {
           </div>
           <dl className="dossier-meta">
             <div><dt>Identity</dt><dd>Nguyễn Lê Quốc Bảo</dd></div>
-            <div><dt>Sources</dt><dd>ambrouse · baolnq-ai</dd></div>
+            <div><dt>Sources</dt><dd>github.com/baonguyen3568</dd></div>
             <div><dt>Record</dt><dd>Public repository archive</dd></div>
           </dl>
           <div className="stat-list">

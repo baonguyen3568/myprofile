@@ -18,7 +18,7 @@ function repoBannerCandidates(project: GitHubProject) {
   const localOverride = project.bannerImage?.startsWith('/')
     ? `${base}${project.bannerImage.replace(/^\/+/, '')}`
     : project.bannerImage;
-  const rootCandidates = project.fullName === 'ambrouse/myprofile'
+  const rootCandidates = project.name === 'myprofile'
     ? bannerExtensions.map((extension) => `${base}banner.${extension}`)
     : [];
   const remoteCandidates = bannerExtensions.flatMap((extension) => [
@@ -135,7 +135,7 @@ function ProjectCard({ project, featured = false, index = 0 }: { project: GitHub
 
 export function ProjectsPage() {
   const { content } = useI18n();
-  const { projects, languages, isLoading, error } = useProjects();
+  const { projects, owners, languages, isLoading, error } = useProjects();
   const [query, setQuery] = useState('');
   const [owner, setOwner] = useState('all');
   const [language, setLanguage] = useState('all');
@@ -172,8 +172,7 @@ export function ProjectsPage() {
         </label>
         <select value={owner} onChange={(event) => setOwner(event.target.value)} aria-label="Filter by GitHub account">
           <option value="all">{content.projects.allAccounts}</option>
-          <option value="ambrouse">ambrouse</option>
-          <option value="baolnq-ai">baolnq-ai</option>
+          {owners.map((item) => <option value={item} key={item}>{item}</option>)}
         </select>
         <select value={language} onChange={(event) => setLanguage(event.target.value)} aria-label="Filter by language">
           <option value="all">{content.projects.allLanguages}</option>

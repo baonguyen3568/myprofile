@@ -21,7 +21,7 @@ This repository contains a full rebuild of the previous static portfolio. The ol
 |---|---|
 | Identity | Nguyễn Lê Quốc Bảo |
 | Focus | AI systems, backend architecture, RAG, Edge AI, automation |
-| GitHub sources | `ambrouse`, `baolnq-ai` |
+| GitHub source | `baonguyen3568` (organization) |
 | Deployment target | GitHub Pages |
 | Runtime model | Static frontend, generated repository JSON |
 
@@ -29,7 +29,7 @@ This repository contains a full rebuild of the previous static portfolio. The ol
 
 ```mermaid
 flowchart LR
-  A[GitHub users: ambrouse + baolnq-ai] --> B[scripts/sync-github-repos.ts]
+  A[GitHub organization: baonguyen3568] --> B[scripts/sync-github-repos.ts]
   B --> C[public/data/github-repos.json]
   C --> D[React Projects Page]
   D --> E[Vite static build]

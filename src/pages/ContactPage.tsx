@@ -31,7 +31,7 @@ export function ContactPage() {
           </a>
           <div className="footer-links contact-links">
             <a href={`mailto:${content.contact.email}`}><Mail size={17} />{content.contact.email}</a>
-            <a href="https://github.com/ambrouse" target="_blank" rel="noreferrer"><Code2 size={17} />{content.contact.github}</a>
+            <a href="https://github.com/baonguyen3568" target="_blank" rel="noreferrer"><Code2 size={17} />{content.contact.github}</a>
             <a href={`tel:${content.contact.phone}`}><Phone size={17} />{content.contact.phone}</a>
           </div>
         </div>

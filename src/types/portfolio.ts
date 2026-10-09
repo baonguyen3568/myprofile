@@ -88,7 +88,7 @@ export interface ProfileContent {
 
 export interface GitHubProject {
   id: string;
-  owner: 'ambrouse' | 'baolnq-ai' | string;
+  owner: string;
   name: string;
   fullName: string;
   title: string;
