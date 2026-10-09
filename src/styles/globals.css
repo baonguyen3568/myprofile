@@ -6,13 +6,13 @@
   --bg: #0a0a0a;
   --surface: rgba(22, 22, 22, 0.72);
   --surface-soft: rgba(52, 52, 52, 0.38);
-  --text: #f2f2f2;
-  --muted: #a6a6a6;
+  --text: #d9d9d6;
+  --muted: #94948f;
   --line: rgba(255, 255, 255, 0.12);
   --line-strong: rgba(255, 255, 255, 0.24);
-  --primary: #d6d6d6;
-  --accent: #ffffff;
-  --gold: #8f8f8f;
+  --primary: #bdbdbd;
+  --accent: #73c77d;
+  --gold: #c68a50;
   --danger: #f4a29a;
   --shadow: 0 28px 90px rgba(0, 0, 0, 0.24);
   --shadow-soft: 0 16px 44px rgba(0, 0, 0, 0.16);
@@ -28,13 +28,13 @@
   --bg: #f4f4f4;
   --surface: rgba(255, 255, 255, 0.82);
   --surface-soft: rgba(226, 226, 226, 0.54);
-  --text: #141414;
-  --muted: #636363;
+  --text: #262626;
+  --muted: #666666;
   --line: rgba(0, 0, 0, 0.12);
   --line-strong: rgba(0, 0, 0, 0.24);
-  --primary: #2b2b2b;
-  --accent: #0a0a0a;
-  --gold: #7a7a7a;
+  --primary: #3d3d3d;
+  --accent: #2f8b5b;
+  --gold: #a66a3f;
   --danger: #b42318;
   --shadow: 0 28px 90px rgba(0, 0, 0, 0.14);
   --shadow-soft: 0 16px 44px rgba(0, 0, 0, 0.1);
@@ -45,13 +45,13 @@
   --bg: #0a0a0a;
   --surface: rgba(22, 22, 22, 0.72);
   --surface-soft: rgba(52, 52, 52, 0.38);
-  --text: #f2f2f2;
-  --muted: #a6a6a6;
+  --text: #d9d9d6;
+  --muted: #94948f;
   --line: rgba(255, 255, 255, 0.12);
   --line-strong: rgba(255, 255, 255, 0.24);
-  --primary: #d6d6d6;
-  --accent: #ffffff;
-  --gold: #8f8f8f;
+  --primary: #bdbdbd;
+  --accent: #73c77d;
+  --gold: #c68a50;
   --danger: #f4a29a;
   --shadow: 0 28px 90px rgba(0, 0, 0, 0.36);
   --shadow-soft: 0 16px 44px rgba(0, 0, 0, 0.26);
@@ -66,7 +66,7 @@ html {
 }
 *::-webkit-scrollbar { width: 11px; height: 11px; }
 *::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, color-mix(in srgb, var(--bg) 88%, var(--surface-soft)), color-mix(in srgb, var(--bg) 94%, var(--accent)));
+  background: linear-gradient(180deg, color-mix(in srgb, var(--bg) 88%, var(--surface-soft)), color-mix(in srgb, var(--bg) 94%, var(--primary)));
 }
 *::-webkit-scrollbar-thumb {
   border: 3px solid transparent;
@@ -83,7 +83,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background:
-    linear-gradient(115deg, color-mix(in srgb, var(--bg) 94%, var(--surface-soft)) 0%, var(--bg) 48%, color-mix(in srgb, var(--bg) 90%, var(--accent)) 100%),
+    linear-gradient(115deg, color-mix(in srgb, var(--bg) 94%, var(--surface-soft)) 0%, var(--bg) 48%, color-mix(in srgb, var(--bg) 92%, var(--primary)) 100%),
     linear-gradient(180deg, color-mix(in srgb, var(--surface-soft) 22%, transparent), transparent 42%),
     var(--bg);
   color: var(--text);
@@ -422,8 +422,8 @@ dd { margin: 0; color: var(--text); font-family: var(--font-display); font-size:
 .search-open .search-field input { width: 100%; opacity: 1; }
 .filter-panel select { width: 100%; min-height: 34px; padding: 0 10px; border: 0; outline: 0; border-radius: 9px; background: color-mix(in srgb, var(--surface-soft) 68%, var(--bg)); color: var(--text); }
 .filter-panel select option { background: color-mix(in srgb, var(--bg) 92%, var(--surface-soft)); color: var(--text); }
-:root[data-theme='light'] .filter-panel select option { background: #f7f7f7; color: #141414; }
-:root[data-theme='dark'] .filter-panel select option { background: #111111; color: #f2f2f2; }
+:root[data-theme='light'] .filter-panel select option { background: #f7f7f7; color: #262626; }
+:root[data-theme='dark'] .filter-panel select option { background: #111111; color: #d9d9d6; }
 .project-section { margin-top: 34px; }
 .project-section-header { margin-bottom: 14px; display: flex; justify-content: space-between; align-items: end; gap: 18px; }
 .project-section-header h2 { margin-bottom: 6px; font-family: 'Libre Baskerville', Georgia, serif; font-size: clamp(1.45rem, 2.4vw, 2rem); font-weight: 400; letter-spacing: -0.035em; }
@@ -479,12 +479,12 @@ dd { margin: 0; color: var(--text); font-family: var(--font-display); font-size:
 .repo-banner-fallback-copy span { color: var(--accent); font-size: 0.68rem; font-weight: 650; letter-spacing: 0.13em; text-transform: uppercase; }
 .repo-banner-fallback-copy strong { display: -webkit-box; color: var(--text); font-family: var(--font-display); font-size: clamp(1rem, 1.8vw, 1.35rem); font-weight: 400; line-height: 1.25; letter-spacing: -0.02em; text-wrap: balance; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .repo-banner-ai { background: radial-gradient(circle at 78% 28%, color-mix(in srgb, var(--accent) 30%, transparent), transparent 25%), linear-gradient(135deg, color-mix(in srgb, var(--primary) 18%, var(--bg)), var(--bg)); }
-.repo-banner-vision { background: radial-gradient(circle at 78% 28%, color-mix(in srgb, #f2f2f2 28%, transparent), transparent 25%), linear-gradient(135deg, color-mix(in srgb, #9a9a9a 22%, var(--bg)), var(--bg)); }
-.repo-banner-operations { background: radial-gradient(circle at 78% 28%, color-mix(in srgb, #d9d9d9 28%, transparent), transparent 25%), linear-gradient(135deg, color-mix(in srgb, #7d7d7d 18%, var(--bg)), var(--bg)); }
-.repo-banner-web { background: radial-gradient(circle at 78% 28%, color-mix(in srgb, #c4c4c4 28%, transparent), transparent 25%), linear-gradient(135deg, color-mix(in srgb, #666666 18%, var(--bg)), var(--bg)); }
-.repo-banner-backend { background: radial-gradient(circle at 78% 28%, color-mix(in srgb, #e6e6e6 28%, transparent), transparent 25%), linear-gradient(135deg, color-mix(in srgb, #525252 18%, var(--bg)), var(--bg)); }
-.repo-banner-notebook { background: radial-gradient(circle at 78% 28%, color-mix(in srgb, #cfcfcf 28%, transparent), transparent 25%), linear-gradient(135deg, color-mix(in srgb, #8a8a8a 18%, var(--bg)), var(--bg)); }
-.repo-banner-automation { background: radial-gradient(circle at 78% 28%, color-mix(in srgb, #bababa 28%, transparent), transparent 25%), linear-gradient(135deg, color-mix(in srgb, #707070 18%, var(--bg)), var(--bg)); }
+.repo-banner-vision { background: radial-gradient(circle at 78% 28%, color-mix(in srgb, #8be9fd 28%, transparent), transparent 25%), linear-gradient(135deg, color-mix(in srgb, #3674ff 22%, var(--bg)), var(--bg)); }
+.repo-banner-operations { background: radial-gradient(circle at 78% 28%, color-mix(in srgb, #f4c95d 28%, transparent), transparent 25%), linear-gradient(135deg, color-mix(in srgb, #d36b35 18%, var(--bg)), var(--bg)); }
+.repo-banner-web { background: radial-gradient(circle at 78% 28%, color-mix(in srgb, #b58cff 28%, transparent), transparent 25%), linear-gradient(135deg, color-mix(in srgb, #6f45d9 18%, var(--bg)), var(--bg)); }
+.repo-banner-backend { background: radial-gradient(circle at 78% 28%, color-mix(in srgb, #6ee7b7 28%, transparent), transparent 25%), linear-gradient(135deg, color-mix(in srgb, #16745b 18%, var(--bg)), var(--bg)); }
+.repo-banner-notebook { background: radial-gradient(circle at 78% 28%, color-mix(in srgb, #f8a4d8 28%, transparent), transparent 25%), linear-gradient(135deg, color-mix(in srgb, #a43c84 18%, var(--bg)), var(--bg)); }
+.repo-banner-automation { background: radial-gradient(circle at 78% 28%, color-mix(in srgb, #ff9e64 28%, transparent), transparent 25%), linear-gradient(135deg, color-mix(in srgb, #a44b29 18%, var(--bg)), var(--bg)); }
 .project-card-top { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 10px; color: var(--muted); font-size: 0.7rem; font-weight: 550; }
 .project-owner { color: var(--accent); }
 .project-card h3 {

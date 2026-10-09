@@ -34,8 +34,8 @@ interface GridAgent {
 }
 
 const agentPalette = {
-  light: ['#141414', '#4d4d4d', '#7a7a7a', '#2e2e2e', '#666666', '#8f8f8f'],
-  dark: ['#f2f2f2', '#cfcfcf', '#9e9e9e', '#e0e0e0', '#b8b8b8', '#858585']
+  light: ['#2f8b5b', '#4d4d4d', '#a66a3f', '#2e2e2e', '#5aa86a', '#8f8f8f'],
+  dark: ['#73c77d', '#bdbdbd', '#c68a50', '#d0d0d0', '#9bd88b', '#858585']
 };
 
 const gridPalette = {

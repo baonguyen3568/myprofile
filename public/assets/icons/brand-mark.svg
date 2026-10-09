@@ -1,32 +1,32 @@
 <svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="leaf" x1="60" y1="42" x2="181" y2="202" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#D4D4D4"/>
-      <stop offset="0.52" stop-color="#8F8F8F"/>
-      <stop offset="1" stop-color="#595959"/>
+    <linearGradient id="forest" x1="60" y1="42" x2="181" y2="202" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8BCF78"/>
+      <stop offset="0.52" stop-color="#2E8B63"/>
+      <stop offset="1" stop-color="#185448"/>
     </linearGradient>
-    <linearGradient id="trunk" x1="103" y1="198" x2="143" y2="92" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#6E6E6E"/>
-      <stop offset="1" stop-color="#A8A8A8"/>
+    <linearGradient id="wood" x1="103" y1="198" x2="143" y2="92" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A66A3F"/>
+      <stop offset="1" stop-color="#D29A5E"/>
     </linearGradient>
   </defs>
 
-  <!-- Organic growth ring: a quiet reference to growth rings and system cycles. -->
-  <path d="M120 22C174 22 218 66 218 120C218 174 174 218 120 218" stroke="#9A9A9A" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10" opacity=".55"/>
-  <path d="M120 218C66 218 22 174 22 120C22 66 66 22 120 22" stroke="#6E6E6E" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 14" opacity=".48"/>
+  <!-- Organic growth ring: a quiet reference to wood grain and system cycles. -->
+  <path d="M120 22C174 22 218 66 218 120C218 174 174 218 120 218" stroke="#5AAE72" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10" opacity=".55"/>
+  <path d="M120 218C66 218 22 174 22 120C22 66 66 22 120 22" stroke="#A66A3F" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 14" opacity=".48"/>
 
   <!-- Rooted trunk and branching data paths. -->
-  <path d="M120 202C119 175 120 145 124 117" stroke="url(#trunk)" stroke-width="12" stroke-linecap="round"/>
-  <path d="M120 181C105 174 94 163 86 149M121 161C137 152 148 141 156 126" stroke="url(#trunk)" stroke-width="6" stroke-linecap="round"/>
-  <path d="M120 202C108 207 98 207 88 204M120 202C132 207 142 207 152 204" stroke="#6E6E6E" stroke-width="4" stroke-linecap="round" opacity=".72"/>
+  <path d="M120 202C119 175 120 145 124 117" stroke="url(#wood)" stroke-width="12" stroke-linecap="round"/>
+  <path d="M120 181C105 174 94 163 86 149M121 161C137 152 148 141 156 126" stroke="url(#wood)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M120 202C108 207 98 207 88 204M120 202C132 207 142 207 152 204" stroke="#A66A3F" stroke-width="4" stroke-linecap="round" opacity=".72"/>
 
-  <!-- Leaf canopy: growth, balance. -->
-  <path d="M124 119C88 111 63 83 68 43C106 40 139 58 145 91C148 105 139 115 124 119Z" fill="url(#leaf)"/>
-  <path d="M124 117C143 107 166 82 170 47C204 67 205 101 184 123C168 140 143 137 124 117Z" fill="url(#leaf)" opacity=".94"/>
-  <path d="M124 117C103 94 89 72 73 46M124 117C143 96 158 73 170 49" stroke="#F5F5F5" stroke-width="3" stroke-linecap="round" opacity=".85"/>
+  <!-- Leaf canopy: growth, balance and the Mộc element. -->
+  <path d="M124 119C88 111 63 83 68 43C106 40 139 58 145 91C148 105 139 115 124 119Z" fill="url(#forest)"/>
+  <path d="M124 117C143 107 166 82 170 47C204 67 205 101 184 123C168 140 143 137 124 117Z" fill="url(#forest)" opacity=".94"/>
+  <path d="M124 117C103 94 89 72 73 46M124 117C143 96 158 73 170 49" stroke="#C5E9A4" stroke-width="3" stroke-linecap="round" opacity=".85"/>
 
   <!-- Small system nodes keep the mark connected to applied AI without looking mechanical. -->
-  <circle cx="68" cy="43" r="5" fill="#A8A8A8"/>
-  <circle cx="170" cy="47" r="5" fill="#A8A8A8"/>
-  <circle cx="124" cy="117" r="4" fill="#E0E0E0"/>
+  <circle cx="68" cy="43" r="5" fill="#D29A5E"/>
+  <circle cx="170" cy="47" r="5" fill="#D29A5E"/>
+  <circle cx="124" cy="117" r="4" fill="#F2D19B"/>
 </svg>
