@@ -15,7 +15,7 @@ describe('localized portfolio content', () => {
   });
 
   it('never uses semicolons in Vietnamese prose', () => {
-    const text = JSON.stringify(content.vi.projects) + JSON.stringify(content.vi.about) + JSON.stringify(content.vi.journey);
-    expect(text).not.toContain(';');
+    expect(JSON.stringify(content.vi)).not.toContain(';');
   });
+
 });
