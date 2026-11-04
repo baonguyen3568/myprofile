@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T02:30:21.537Z",
+  "generatedAt": "2026-11-04T10:37:25.719Z",
   "owners": [
     "baonguyen3568"
   ],
@@ -154,7 +154,7 @@
       "isArchived": false,
       "isFeatured": false,
       "updatedAt": "2026-08-14T01:44:28Z",
-      "pushedAt": "2026-09-28T09:18:32Z",
+      "pushedAt": "2026-11-02T09:19:48Z",
       "category": "Applied AI system",
       "keywords": [
         "AI",
@@ -163,6 +163,57 @@
       ],
       "banner": "ai",
       "bannerImage": "https://raw.githubusercontent.com/baonguyen3568/Multi-Agent-Intelligent-WarehousePublic-nvidia/main/media-repo/banner.png"
+    },
+    {
+      "id": "1416681940",
+      "owner": "baonguyen3568",
+      "name": "training-line",
+      "fullName": "baonguyen3568/training-line",
+      "title": "Training Line",
+      "description": "Training Line focuses on agent or AI workflow implementation, useful for reviewing orchestration, model integration and application boundaries.",
+      "url": "https://github.com/baonguyen3568/training-line",
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "isFork": false,
+      "isArchived": false,
+      "isFeatured": false,
+      "updatedAt": "2026-10-20T01:13:10Z",
+      "pushedAt": "2026-10-20T01:13:06Z",
+      "category": "Applied AI system",
+      "keywords": [
+        "AI",
+        "agent workflow",
+        "system"
+      ],
+      "banner": "ai"
+    },
+    {
+      "id": "1038471832",
+      "owner": "baonguyen3568",
+      "name": "myprofile",
+      "fullName": "baonguyen3568/myprofile",
+      "title": "Myprofile",
+      "description": "Myprofile is a CSS web interface repository, useful for reading UI structure, client routing and deployment practice.",
+      "url": "https://github.com/baonguyen3568/myprofile",
+      "homepage": "https://baonguyen3568.github.io/myprofile/",
+      "language": "CSS",
+      "topics": [],
+      "stars": 1,
+      "forks": 0,
+      "isFork": false,
+      "isArchived": false,
+      "isFeatured": false,
+      "updatedAt": "2026-10-09T03:18:16Z",
+      "pushedAt": "2026-10-09T03:18:13Z",
+      "category": "Computer vision study",
+      "keywords": [
+        "vision",
+        "inference",
+        "CSS"
+      ],
+      "banner": "vision",
+      "bannerImage": "https://raw.githubusercontent.com/baonguyen3568/myprofile/main/banner.jpg"
     },
     {
       "id": "1314435433",
@@ -213,33 +264,6 @@
       ],
       "banner": "record",
       "bannerImage": "https://raw.githubusercontent.com/baonguyen3568/ambrouse/main/assets/hero.svg"
-    },
-    {
-      "id": "1038471832",
-      "owner": "baonguyen3568",
-      "name": "myprofile",
-      "fullName": "baonguyen3568/myprofile",
-      "title": "Myprofile",
-      "description": "Myprofile is a CSS web interface repository, useful for reading UI structure, client routing and deployment practice.",
-      "url": "https://github.com/baonguyen3568/myprofile",
-      "homepage": "https://baonguyen3568.github.io/myprofile/",
-      "language": "CSS",
-      "topics": [],
-      "stars": 1,
-      "forks": 0,
-      "isFork": false,
-      "isArchived": false,
-      "isFeatured": false,
-      "updatedAt": "2026-08-14T02:12:32Z",
-      "pushedAt": "2026-07-23T10:18:06Z",
-      "category": "Computer vision study",
-      "keywords": [
-        "vision",
-        "inference",
-        "CSS"
-      ],
-      "banner": "vision",
-      "bannerImage": "https://raw.githubusercontent.com/baonguyen3568/myprofile/main/banner.jpg"
     },
     {
       "id": "1308269096",

@@ -1,18 +1,21 @@
 import { describe, expect, it } from 'vitest';
-import en from '../src/content/profile.en.json';
-import vi from '../src/content/profile.vi.json';
+import { content } from '../src/site/content';
 
-function keys(value: object) {
-  return Object.keys(value).sort();
+function shape(value: unknown): unknown {
+  if (Array.isArray(value)) return value.map(shape);
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(Object.entries(value).map(([key, inner]) => [key, shape(inner)]));
+  }
+  return typeof value;
 }
 
 describe('localized portfolio content', () => {
-  it('keeps top-level locale keys aligned', () => {
-    expect(keys(en)).toEqual(keys(vi));
+  it('keeps English and Vietnamese copy structurally aligned', () => {
+    expect(shape(content.vi)).toEqual(shape(content.en));
   });
 
-  it('keeps selected case counts aligned', () => {
-    expect(en.cases.items).toHaveLength(vi.cases.items.length);
-    expect(en.capabilities.items).toHaveLength(vi.capabilities.items.length);
+  it('never uses semicolons in Vietnamese prose', () => {
+    const text = JSON.stringify(content.vi.projects) + JSON.stringify(content.vi.about) + JSON.stringify(content.vi.journey);
+    expect(text).not.toContain(';');
   });
 });

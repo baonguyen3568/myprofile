@@ -14,12 +14,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/three": "^0.169.0",
     "@vitejs/plugin-react": "latest",
     "framer-motion": "latest",
     "lucide-react": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-router-dom": "latest",
+    "three": "^0.169.0",
     "typescript": "latest",
     "vite": "latest"
   },

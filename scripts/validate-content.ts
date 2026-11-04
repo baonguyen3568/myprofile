@@ -7,8 +7,6 @@ async function validateJson(path: string) {
 
 async function main() {
   const data = await validateJson('public/data/github-repos.json') as { projects?: unknown[] };
-  await validateJson('src/content/profile.en.json');
-  await validateJson('src/content/profile.vi.json');
 
   if (!Array.isArray(data.projects)) {
     throw new Error('public/data/github-repos.json must contain a projects array');
