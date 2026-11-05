@@ -52,7 +52,7 @@ export const links = {
   repos: 'https://github.com/baonguyen3568?tab=repositories',
   ntcsale: 'https://saleai.ntc.ai.vn',
   vision: 'https://vision.ntc.ai.vn',
-  labs: 'https://labs.ntc.ai.vn',
+  ragChat: 'https://chat.ntc.ai.vn',
   inspiration: 'https://brittanychiang.com'
 };
 
@@ -123,7 +123,7 @@ const en: Copy = {
     },
     {
       title: 'Document Agent RAG',
-      href: links.labs,
+      href: links.ragChat,
       image: 'assets/thumbs/doc-agent.webp',
       desc: 'Document Q&A app that installs on DGX Spark with one command. It answers questions about your files and shows the page each answer came from.',
       metrics: ['One-command install', 'Cited answers'],
